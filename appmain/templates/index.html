@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KIA Recommend</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<!--[if lte IE 8]>
+	<script src="../static/css/ie/html5shiv.js"></script>
+	<![endif]--><script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/skel.min.js"></script>
+	<script src="../static/js/skel-layers.min.js"></script>
+	<script src="../static/js/init.js"></script>
+	<script src="../static/js/animate.js"></script>
+	<script src="../static/js/linked.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="../static/css/skel.css">
+		<link rel="stylesheet" href="../static/css/index_style.css">
+		<link rel="stylesheet" href="../static/css/style-xlarge.css">
+	</noscript>
+	<link rel="stylesheet" href="../static/css/style.css"><!--[if lte IE 8]>
+	<link rel="stylesheet" href="../static/css/ie/v8.css"/><![endif]-->
+</head>
+<body class="landing">
+
+		<!-- Header -->
+
+		<header id="header"><!--<h1><a href="index.html">KIA</a></h1>-->
+				<a href="/home" target="/home"><img src="../static/images/KIALOGO01.png" style="border:0; margin-left: 20px"></a>
+				<nav id="nav"><ul>
+						<li><a href="/survey">추천 차량 찾기</a></li>
+						<li><a href="/cars">차량 목록</a></li>
+					</ul></nav></header><!-- Banner -->
+				<section id="banner" class="fadeIn">
+				<p></p><ul><br><br></ul></section>
+
+				<section id="select-section" class="selections">
+				  <div class="select-button" data-target="{{ url_for('main.survey_page') }}">
+					<span class="button-text">Survey</span>
+					<img src="{{ url_for('static', filename='images/survey_01.png') }}" class="button-image" alt="Survey">
+				  </div>
+				  <!--<div class="select-button" data-target="{{ url_for('main.analyze_page') }}">
+					<span class="button-text">Analyze</span>
+					<img src="{{ url_for('static', filename='images/analyze_02.png') }}" class="button-image" alt="Analyze">
+				  </div>-->
+				  <div class="select-button" data-target="{{ url_for('main.cars') }}">
+					<span class="button-text">Car List</span>
+					<img src="{{ url_for('static', filename='images/cars_01.png') }}" class="button-image" alt="Car List">
+				  </div>
+				</section>
+<!--
+				<section id="image-section">
+				  <div class="image-container hidden">
+					<img src="../static/images/Kia_main.png" alt="Kia Cars" />
+					<div class="overlay-text">
+					<div class="content">
+					  <p class="intro-text" id="findCarText">나에게 맞는 차량 찾기기.</p>
+					</div>
+					</div>
+				  </div>
+				</section>
+-->
+				<!-- Footer -->
+				<footer id="footer"><div class="container">
+					<div class="column">
+						<section class="4u 6u(medium) 12u$(small)"><h3>Official KIA</h3>
+							<ul class="horizontal-list">
+								<li><a href="https://www.kia.com/kr">KIA - Movement that inspires</a></li>
+								<li><a href="https://members.kia.com/kr/view/kindex.do">KIA Members</a></li>
+								<li><a href="https://developers.kia.com/web/v1/kia/main">KIA Developers</a></li>
+							</ul></section></div><br><br>
+					<div class="alt" style="display: flex;">
+						<section class="info1"><h3>Jungbu Info1</h3>
+							<ul class="icons">
+								<li><a href="https://www.joongbu.ac.kr/" class="icon rounded fa-home"><span class="label">Home</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCtG9dUbDsAnuQIqBEuxAdnA" class="icon rounded fa-youtube-play"><span class="label">Youtube</span></a></li>
+								<li><a href="https://www.instagram.com/joongbuuniv/?hl=ko" class="icon rounded fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.facebook.com/joongbuuniversity/?locale=ko_KR" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+							</ul></section>
+						<section class="info2"><h3>Jungbu Info2</h3>
+							<ul class="horizontal-list">
+								<li>
+									<h3>Mail</h3>
+									<a href="#">**********@jamil.ac.kr</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									010-****-****
+								</li>
+							</ul></section></div>
+				</div>
+			</footer><div class="copyright">
+		</div>
+<script>
+// DOM이 로드된 후에 함수를 실행합니다.
+document.addEventListener('DOMContentLoaded', function() {
+  // 화면에 표시되어야 하는 요소들을 선택합니다.
+  const imageContainer = document.querySelector('.image-container');
+  const textElement = document.querySelector('.intro-text');
+  let hasStartedTyping = false; // 타이핑 애니메이션이 시작됐는지 추적하는 변수
+
+  // 스크롤 이벤트 리스너를 추가합니다.
+  window.addEventListener('scroll', function() {
+    // 이미지가 화면에 나타났는지 확인하는 로직입니다.
+    if (imageContainer.getBoundingClientRect().top < window.innerHeight - 100 && !hasStartedTyping) {
+      // 이미지가 보이면 클래스를 추가하여 페이드인 효과를 적용합니다.
+      imageContainer.classList.add('visible');
+      // 타이핑 애니메이션 시작
+      textElement.classList.add('typing');
+      hasStartedTyping = true; // 타이핑 애니메이션 시작 상태를 true로 설정
+    }
+  });
+
+  // 텍스트 클릭 시 이동 이벤트 추가
+  textElement.style.cursor = 'pointer';
+  textElement.addEventListener('click', function() {
+    window.location.href = '/survey'; // 서베이 페이지로 이동
+  });
+});
+
+</script>
+
+	</body></html>

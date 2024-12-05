@@ -1,0 +1,1509 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("//fonts.googleapis.com/css?family=Lato:300,400");
+
+/*
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* Basic */
+html {
+  height: 100%; /* 전체 html에 대해 높이를 100%로 설정 */
+  background: #202222; /* footer와 같은 배경색을 적용 */
+}
+
+	body {
+		min-height: 100%;
+		background: #ffffff;
+		margin: 0;
+		padding: 0;
+	}
+.image.fit img {
+	width: 100%;
+	height: auto;
+}
+	body, input, select, textarea {
+		color: #444;
+		font-family: "Lato", Helvetica, sans-serif;
+		font-size: 15pt;
+		font-weight: 300;
+		line-height: 1.65em;
+	}
+
+	a {
+		color: #4dac71;
+		text-decoration: underline;
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		color: #666;
+		font-weight: 400;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #666;
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.75em;
+		line-height: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.35em;
+		line-height: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 3em 0;
+		}
+
+	blockquote {
+		border-left: solid 4px rgba(144, 144, 144, 0.25);
+		font-style: italic;
+		margin: 0 0 2em 0;
+		padding: 0.5em 0 0.5em 2em;
+	}
+
+	code {
+		background: rgba(144, 144, 144, 0.075);
+		border-radius: 4px;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		margin: 0 0 2em 0;
+	}
+
+		pre code {
+			display: block;
+			line-height: 1.75em;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+/* Section/Article */
+
+	section.special, article.special {
+		text-align: center;
+	}
+
+	header p {
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+		line-height: 1.5em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.8em;
+		line-height: 1.5em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+		line-height: 1.5em;
+	}
+
+	header.major {
+		text-align: center;
+		margin-bottom: 3em;
+	}
+
+		header.major h2 {
+			font-size: 3em;
+		}
+
+		header.major p {
+			border-top: medium double rgba(144, 144, 144, 0.25);
+			display: inline-block;
+			padding: 2em 2em 0 2em;
+		}
+
+/* Form */
+
+	form {
+		margin: 0 0 2em 0;
+	}
+
+	label {
+		color: #666;
+		display: block;
+		font-size: 0.9em;
+		font-weight: 400;
+		margin: 0 0 1em 0;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: rgba(144, 144, 144, 0.075);
+		border-radius: 4px;
+		border: none;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+	}
+
+		input[type="text"]:invalid,
+		input[type="password"]:invalid,
+		input[type="email"]:invalid,
+		select:invalid,
+		textarea:invalid {
+			box-shadow: none;
+		}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #4dac71;
+			box-shadow: 0 0 0 1px #4dac71;
+		}
+
+	.select-wrapper {
+		text-decoration: none;
+		display: block;
+		position: relative;
+	}
+
+		.select-wrapper:before {
+			content: "";
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.select-wrapper:before {
+			color: rgba(144, 144, 144, 0.25);
+			display: block;
+			height: 2.75em;
+			line-height: 2.75em;
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 0;
+			width: 2.75em;
+		}
+
+		.select-wrapper select::-ms-expand {
+			display: none;
+		}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: 2.75em;
+	}
+
+	textarea {
+		padding: 0.75em 1em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		display: block;
+		float: left;
+		margin-right: -2em;
+		opacity: 0;
+		width: 1em;
+		z-index: -1;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			text-decoration: none;
+			color: #444;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1em;
+			font-weight: 300;
+			padding-left: 2.4em;
+			padding-right: 0.75em;
+			position: relative;
+		}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				background: rgba(144, 144, 144, 0.075);
+				border-radius: 4px;
+				border: solid 1px rgba(144, 144, 144, 0.25);
+				content: '';
+				display: inline-block;
+				height: 1.65em;
+				left: 0;
+				line-height: 1.58125em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 1.65em;
+			}
+
+		input[type="checkbox"]:checked + label:before,
+		input[type="radio"]:checked + label:before {
+			background: #3ba666;
+			border-color: #3ba666;
+			color: #ffffff;
+			content: '\f00c';
+		}
+
+		input[type="checkbox"]:focus + label:before,
+		input[type="radio"]:focus + label:before {
+			border-color: #4dac71;
+			box-shadow: 0 0 0 1px #4dac71;
+		}
+
+	input[type="checkbox"] + label:before {
+		border-radius: 4px;
+	}
+
+	input[type="radio"] + label:before {
+		border-radius: 100%;
+	}
+
+	::-webkit-input-placeholder {
+		color: #888 !important;
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		color: #888 !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: #888 !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: #888 !important;
+		opacity: 1.0;
+	}
+
+	.formerize-placeholder {
+		color: #888 !important;
+		opacity: 1.0;
+	}
+
+/* Box */
+
+	.box {
+		border-radius: 4px;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		margin-bottom: 2em;
+		padding: 1.5em;
+	}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon.rounded {
+			border-radius: 100%;
+			border: 1px solid #4dac71;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		}
+
+			.icon.rounded.big {
+				font-size: 3.5em;
+			}
+
+/* Image */
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+/* List */
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+		ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.alt li {
+				border-top: solid 1px rgba(144, 144, 144, 0.25);
+				padding: 0.8em 0;
+			}
+
+				ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+
+		ul.icons {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.icons li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+			}
+
+				ul.icons li:last-child {
+					padding-right: 0;
+				}
+
+		ul.actions {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.actions li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+				vertical-align: middle;
+			}
+
+				ul.actions li:last-child {
+					padding-right: 0;
+				}
+
+			ul.actions.small li {
+				padding: 0 0.5em 0 0;
+			}
+
+			ul.actions.vertical li {
+				display: block;
+				padding: 1em 0 0 0;
+			}
+
+				ul.actions.vertical li:first-child {
+					padding-top: 0;
+				}
+
+				ul.actions.vertical li > * {
+					margin-bottom: 0;
+				}
+
+			ul.actions.vertical.small li {
+				padding: 0.5em 0 0 0;
+			}
+
+				ul.actions.vertical.small li:first-child {
+					padding-top: 0;
+				}
+
+			ul.actions.fit {
+				display: table;
+				margin-left: -1em;
+				padding: 0;
+				table-layout: fixed;
+				width: calc(100% + 1em);
+			}
+
+				ul.actions.fit li {
+					display: table-cell;
+					padding: 0 0 0 1em;
+				}
+
+					ul.actions.fit li > * {
+						margin-bottom: 0;
+					}
+
+				ul.actions.fit.small {
+					margin-left: -0.5em;
+					width: calc(100% + 0.5em);
+				}
+
+					ul.actions.fit.small li {
+						padding: 0 0 0 0.5em;
+					}
+
+		ul.tabular {
+			list-style: outside none none;
+			padding: 0px;
+		}
+
+			ul.tabular li {
+				border-top: solid 1px rgba(144, 144, 144, 0.25);
+				line-height: 1.75em;
+				margin: 1.5em 0px 0px;
+				padding-left: 7em;
+				padding-top: 12px;
+				position: relative;
+			}
+
+				ul.tabular li:first-child {
+					border-top: 0;
+					margin-top: 0;
+				}
+
+				ul.tabular li h3 {
+					left: 0px;
+					position: absolute;
+					text-align: center;
+					top: 12px;
+					vertical-align: top;
+					width: 1em;
+				}
+
+	dl {
+		margin: 0 0 2em 0;
+	}
+
+/* Table */
+
+	.table-wrapper {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+	}
+
+	table {
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		table tbody tr {
+			border: solid 1px rgba(144, 144, 144, 0.25);
+			border-left: 0;
+			border-right: 0;
+		}
+
+			table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(144, 144, 144, 0.075);
+			}
+
+		table td {
+			padding: 0.75em 0.75em;
+		}
+
+		table th {
+			color: #666;
+			font-size: 0.9em;
+			font-weight: 400;
+			padding: 0 0.75em 0.75em 0.75em;
+			text-align: left;
+		}
+
+		table thead {
+			border-bottom: solid 2px rgba(144, 144, 144, 0.25);
+		}
+
+		table tfoot {
+			border-top: solid 2px rgba(144, 144, 144, 0.25);
+		}
+
+		table.alt {
+			border-collapse: separate;
+		}
+
+			table.alt tbody tr td {
+				border: solid 1px rgba(144, 144, 144, 0.25);
+				border-left-width: 0;
+				border-top-width: 0;
+			}
+
+				table.alt tbody tr td:first-child {
+					border-left-width: 1px;
+				}
+
+			table.alt tbody tr:first-child td {
+				border-top-width: 1px;
+			}
+
+			table.alt thead {
+				border-bottom: 0;
+			}
+
+			table.alt tfoot {
+				border-top: 0;
+			}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #3ba666;
+		border-radius: 4px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 2.85em;
+		line-height: 2.8em;
+		padding: 0 2em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		.button:hover {
+			background-color: #42b972;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		.button:active {
+			background-color: #34935a;
+		}
+
+		input[type="submit"].icon,
+		input[type="reset"].icon,
+		input[type="button"].icon,
+		.button.icon {
+			padding-left: 1.35em;
+		}
+
+			input[type="submit"].icon:before,
+			input[type="reset"].icon:before,
+			input[type="button"].icon:before,
+			.button.icon:before {
+				margin-right: 0.5em;
+			}
+
+		input[type="submit"].fit,
+		input[type="reset"].fit,
+		input[type="button"].fit,
+		.button.fit {
+			display: block;
+			margin: 0 0 1em 0;
+			width: 100%;
+		}
+
+		input[type="submit"].small,
+		input[type="reset"].small,
+		input[type="button"].small,
+		.button.small {
+			font-size: 0.8em;
+		}
+
+		input[type="submit"].big,
+		input[type="reset"].big,
+		input[type="button"].big,
+		.button.big {
+			font-size: 1.35em;
+		}
+
+		input[type="submit"].alt,
+		input[type="reset"].alt,
+		input[type="button"].alt,
+		.button.alt {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+			color: #666 !important;
+		}
+
+			input[type="submit"].alt:hover,
+			input[type="reset"].alt:hover,
+			input[type="button"].alt:hover,
+			.button.alt:hover {
+				background-color: rgba(144, 144, 144, 0.075);
+			}
+
+			input[type="submit"].alt:active,
+			input[type="reset"].alt:active,
+			input[type="button"].alt:active,
+			.button.alt:active {
+				background-color: rgba(144, 144, 144, 0.2);
+			}
+
+			input[type="submit"].alt.icon:before,
+			input[type="reset"].alt.icon:before,
+			input[type="button"].alt.icon:before,
+			.button.alt.icon:before {
+				color: #888;
+			}
+
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		.button.special {
+			background-color: #4dac71;
+			color: #ffffff !important;
+		}
+
+			input[type="submit"].special:hover,
+			input[type="reset"].special:hover,
+			input[type="button"].special:hover,
+			.button.special:hover {
+				background-color: #5cb67e;
+			}
+
+			input[type="submit"].special:active,
+			input[type="reset"].special:active,
+			input[type="button"].special:active,
+			.button.special:active {
+				background-color: #459a65;
+			}
+
+		input[type="submit"].disabled, input[type="submit"]:disabled,
+		input[type="reset"].disabled,
+		input[type="reset"]:disabled,
+		input[type="button"].disabled,
+		input[type="button"]:disabled,
+		.button.disabled,
+		.button:disabled {
+			background-color: #444 !important;
+			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+			color: #fff !important;
+			cursor: default;
+			opacity: 0.25;
+		}
+
+/* Header */
+
+	body.landing #header {
+		background-color: transparent;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	#header {
+		background-color: #202222;
+		color: #ffffff;
+		cursor: default;
+		height: 4.75em;
+		line-height: 4.75em;
+		width: 100%;
+		z-index: 10000;
+	}
+
+		#header h1 {
+			color: #ffffff;
+			height: inherit;
+			left: 2.5em;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+		}
+
+			#header h1 a {
+				font-size: 1.25em;
+			}
+
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 2.75em;
+			top: 0;
+			vertical-align: middle;
+		}
+
+			#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+
+				#header nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 1.5em;
+					padding-left: 0;
+				}
+
+					#header nav > ul > li a {
+						-moz-transition: color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out;
+						color: #cee8d8;
+						display: inline-block;
+						text-decoration: none;
+					}
+
+						#header nav > ul > li a:hover {
+							color: #ffffff;
+						}
+
+					#header nav > ul > li:first-child {
+						margin-left: 0;
+					}
+
+					#header nav > ul > li .button {
+						height: 2.25em;
+						line-height: 2.25em;
+						margin-bottom: 0;
+						padding: 0 1em;
+						position: relative;
+						top: -0.075em;
+						vertical-align: middle;
+					}
+
+		#header .container {
+			position: relative;
+		}
+
+			#header .container h1 {
+				left: 0;
+			}
+
+			#header .container nav {
+				right: 0;
+			}
+
+/* Banner */
+
+	#banner {
+		background: url("images/overlay.png"), url("../images/banner.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #ffffff;
+		padding: 16em 0em 14em;
+		text-align: center;
+	}
+
+		#banner h2 {
+			color: #ffffff;
+			font-size: 3em;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#banner p {
+			font-size: 1.5em;
+			margin: 1.5em 0 0 0;
+		}
+
+		#banner .actions {
+			margin: 3em 0 0 0;
+		}
+
+		#banner .button {
+			background-color: transparent;
+			border: 1px solid #ffffff;
+			font-weight: 300;
+		}
+
+			#banner .button:hover {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 6em 0em 4em;
+	}
+
+		.wrapper.style1 {
+			background-color: #3ba666;
+			-moz-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			-webkit-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			-o-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			-ms-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			color: #ffffff;
+		}
+
+			.wrapper.style1 header {
+				margin-bottom: 4em;
+			}
+
+			.wrapper.style1 h2 {
+				color: #ffffff;
+			}
+
+			.wrapper.style1 .icon.big {
+				border-color: #ffffff;
+				margin-bottom: 0.5em;
+			}
+
+		.wrapper.style2 .title, .wrapper.style2 header {
+			border-bottom: medium double rgba(144, 144, 144, 0.25);
+			padding-bottom: 1em;
+		}
+
+		.wrapper.style2 header {
+			margin-bottom: 4em;
+		}
+
+		.wrapper.style2 .feature {
+			margin: 0 0 2em 0;
+		}
+
+/* Footer */
+
+	#footer {
+		background: #202222;
+		color: #888;
+		padding: 4em 4em 4em;
+	}
+
+		#footer h2, #footer h3, #footer h4 {
+			color: #ffffff;
+		}
+
+		#footer a {
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			color: #888;
+		}
+
+			#footer a:active, #footer a:hover {
+				color: #ffffff;
+			}
+
+		#footer .icons .rounded {
+			border-color: #888;
+			font-size: 1.5em;
+		}
+
+			#footer .icons .rounded:active, #footer .icons .rounded:hover {
+				border-color: #ffffff;
+			}
+
+		.copyright {
+			font-size: 0.9em;
+			margin: 2em 0 0 0;
+			padding: 0;
+			text-align: center;
+			width: 100%;
+		}
+
+			.copyright {
+				border-left: solid 1px rgba(144, 144, 144, 0.25);
+				display: inline-block;
+				list-style: none;
+				margin-left: 1.5em;
+				padding-left: 1.5em;
+			}
+
+				.copyright{
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+					margin-top: 15px;
+					margin-bottom: 15px;
+				}
+
+/* style.css 파일 내용 */
+.horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; /* 리스트 내의 항목들이 줄바꿈 되지 않도록 설정 */
+}
+
+.horizontal-list li {
+  display: inline-block; /* 각 항목을 인라인 블록으로 설정 */
+  padding-right: 20px; /* 항목들 사이의 간격 */
+  white-space: nowrap; /* 항목 내의 텍스트가 줄바꿈 되지 않도록 설정 */
+}
+
+.horizontal-list li a {
+  text-decoration: none;
+  color: white; /* 링크 색상 흰색 설정 */
+  font-family: Arial, sans-serif;
+}
+
+.horizontal-list li a:hover {
+  text-decoration: underline;
+}
+
+.alt {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info1, .info2 {
+    box-sizing: border-box;
+    padding: 0 1em;
+    flex: 1 1 50%;
+}
+
+@media (max-width: 768px) {
+    /* 화면이 작을 경우 섹션을 다시 세로로 배치 */
+    .alt {
+        flex-direction: column;
+    }
+    .info1, .info2 {
+        flex-basis: 100%; /* 모바일 화면에서는 100% 너비를 사용 */
+    }
+}
+.car-container {
+	background-color: #ffffff;
+	padding: 6em 0em 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 -10px; /* 네거티브 마진으로 이미지 사이의 간격을 조정 */
+}
+
+.car {
+  flex-basis: 33.333%; /* 3개의 아이템을 한 줄에 나타냄 */
+  max-width: 33.333%; /* 최대 너비 설정 */
+  padding: 0 10px; /* padding으로 간격 조정 */
+  box-sizing: border-box; /* 패딩을 너비에 포함 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin-bottom: 20px; /* 아래쪽 여백 추가 */
+}
+
+.car img {
+  width: 100%; /* 이미지 너비를 부모 요소에 맞춤 */
+  height: auto; /* 이미지 높이를 자동으로 조절하여 비율 유지 */
+}
+
+.car-name {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+#main {
+  background-color: #ffffff; /* 차량 목록 섹션의 배경을 흰색으로 */
+  padding: 6em 0; /* 상하 여백 조절 */
+}
+
+#login {
+  background: #202222;
+  color: white;
+  max-width: 300px;
+  padding: 20px;
+  margin: auto;
+}
+
+#login h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login form input[type="text"],
+#login form input[type="password"] {
+  background: #303030;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#login form input[type="submit"] {
+  background: #4dac71;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login form input[type="submit"]:hover {
+  background: #5cb67e;
+}
+
+.login-wrapper {
+  background-color: #fff; /* 로그인 배경색 */
+  padding: 2em;
+  max-width: 400px;
+  margin: 2em auto 4em; /* 중앙 정렬 및 하단 푸터와의 간격 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 약간의 그림자 효과 */
+}
+
+.login-form h2 {
+  color: #333;
+  text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.login-form .form-group {
+  margin-bottom: 1em;
+}
+
+.login-form .actions {
+  text-align: center;
+}
+
+.login-form button {
+  padding: 0.5em 2em;
+  color: white;
+  background-color: #4dac71; /* 버튼 배경색 */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.login-form button:hover {
+  background-color: #3ba666; /* 버튼 호버색 */
+}
+
+.login-form button:active {
+  background-color: #34935a; /* 버튼 활성화 색 */
+}
+
+/* 회원가입 버튼 스타일 */
+.login-form button[type="button"] {
+  background-color: #555;
+  margin-left: 0.5em;
+}
+
+.login-form button[type="button"]:hover {
+  background-color: #666;
+}
+/* Fade-in 효과 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s; /* 이 값은 원하는 애니메이션 속도에 따라 조절 가능 */
+  animation-fill-mode: both; /* 애니메이션이 끝난 상태를 유지 */
+}
+
+/* Scale-up 효과 */
+@keyframes scaleUp {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); } /* 버튼이 약간 커지는 효과 */
+}
+
+.scaleUp {
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite; /* 애니메이션을 무한 반복 */
+  animation-direction: alternate; /* 애니메이션이 뒤로 갔다가 다시 앞으로 오도록 */
+}
+
+.car img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.car:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+#banner {
+  background-image: url('images/Animation.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* 애니메이션 GIF의 z-index를 설정합니다. */
+#your-animation-id {
+  z-index: 1; /* z-index를 낮게 설정하여 다른 요소들이 위로 올라오게 합니다. */
+}
+
+/* 텍스트와 버튼의 z-index를 설정합니다. */
+#your-text-id, #your-button-id {
+  z-index: 2; /* 텍스트와 버튼이 애니메이션 위에 표시되도록 z-index를 높게 설정합니다. */
+}
+
+#image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0; /* Top and Bottom Padding */
+  background-color: #ffffff; /* 배경색은 원하는 색상으로 변경 가능 */
+}
+
+#image-section img {
+  max-width: 100%;
+  height: auto;
+}
+.image-container {
+  position: relative;
+  /* 이미지 크기에 맞게 설정하세요 */
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px; /* 이미지 하단으로부터의 거리 */
+  left: 10px; /* 이미지 좌측으로부터의 거리 */
+  color: white; /* 텍스트 색상은 원하는 대로 조정하세요 */
+}
+
+.overlay-text p {
+  margin: 0;
+  /* 필요한 스타일링 추가 */
+}
+
+.overlay-text .button {
+  /* 버튼 스타일링 */
+}
+.content {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: flex-start; /* 좌측 정렬 */
+  padding-left: 10%; /* 좌측 여백 */
+	padding-bottom: 10%;
+}
+
+.intro-text {
+  font-size: 35px; /* 폰트 크기 */
+  color: white; /* 텍스트 색상 */
+  margin-right: 20px; /* 오른쪽 여백으로 버튼과의 간격을 줌 */
+	margin-bottom: 20px;
+	white-space: nowrap;
+	max-width: 100%;
+}
+
+.start-button {
+  text-decoration: none; /* 링크 밑줄 제거 */
+  background-color: rgba(0, 0, 0, 0.2); /* 버튼 배경 색상 */
+  color: white; /* 버튼 텍스트 색상 */
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  border-radius: 5px; /* 버튼 둥근 모서리 */
+  transition: background-color 0.3s ease; /* 배경 색상 변경시 부드럽게 전환 */
+	white-space: nowrap;
+}
+
+.start-button:hover {
+  background-color: #000000; /* 마우스 호버시 버튼 색상 */
+}
+/* 초기 상태에서는 이미지를 숨깁니다. */
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* 활성화될 때 효과를 부여합니다. */
+.visible {
+  opacity: 1;
+}
+
+/* 타이핑 애니메이션 효과를 위한 키 프레임 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* 커서 깜빡임 효과를 위한 키 프레임 */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+/* 타이핑 애니메이션을 적용할 클래스 */
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 1.5s steps(18, end), blink-caret .40s step-end infinite;
+  /* 애니메이션 지속 시간과 타이핑 속도는 조절 가능 */
+	max-width: 100%;
+}
+
+.button-signup {
+  display: inline-block;
+  padding: 10px 20px; /* 버튼의 크기를 조정하려면 이 값을 조정하세요 */
+  background-color: #4dac71;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em; /* 텍스트의 크기를 조정하려면 이 값을 조정하세요 */
+  /* 필요한 다른 스타일 속성들을 추가하세요 */
+}
+
+
+.selections {
+  display: flex;
+  justify-content: space-evenly; /* 버튼 간의 간격을 동일하게 설정 */
+  background-color: #202222; /* 배경 어두운 색상 설정 */
+  padding: 20px;
+}
+
+.select-button {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.button-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.button-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.select-button:hover .button-text {
+  opacity: 0;
+}
+
+.select-button:hover .button-image {
+  opacity: 1;
+}
+
+.select-button:hover {
+  transform: scale(1.1);
+}
+
+

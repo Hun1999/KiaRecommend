@@ -1,0 +1,132 @@
+
+
+#quiz-container {
+  background-color: #202222; /* 배경색을 흰색으로 설정 */
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  max-width: 800px; /* 최대 너비 설정 */
+  margin: 3em auto; /* 상단과 하단에 마진 추가하여 중앙 정렬 */
+}
+
+#question {
+  font-size: 1.5em; /* 질문의 폰트 크기를 늘림 */
+  color: #ffffff; /* 색상을 어두운 회색으로 설정 */
+  margin-bottom: 1.5em;
+}
+
+#answers {
+  list-style: none; /* 리스트 기본 스타일 제거 */
+  padding: 0;
+}
+
+/* 'li' 항목에 'position: relative;'을 추가하여 내부 요소의 절대 위치를 기준으로 설정할 수 있게 합니다. */
+#answers li {
+  position: relative;
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold; /* 글씨 두께를 두껍게 설정 */
+}
+
+#answers li:hover {
+  background-color: #666666;
+}
+
+#next-question {
+  background-color: #C5002F; /* KIA 브랜드 색상 */
+  color: #ffffff; /* 텍스트 색상은 흰색 */
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 1em;
+  margin-top: 2em; /* '다음 질문' 버튼과 답변 옵션 사이의 간격 */
+  cursor: pointer; /* 클릭 가능함을 나타내는 포인터 커서 */
+  display: block; /* 블록 레벨 요소로 변경 */
+  width: 100%; /* 너비를 전체로 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 버튼에 그림자 효과 추가 */
+  transition: background-color 0.3s; /* 배경색 변경시 트랜지션 효과 */
+}
+
+#next-question:hover {
+  background-color: #9B001C; /* 마우스 오버시 버튼의 배경색 변경 */
+}
+
+/* Header */
+#header {
+	background-color: #202222;
+	color: #ffffff;
+	cursor: default;
+	height: 4.75em;
+	line-height: 4.75em;
+	width: 100%;
+	z-index: 10000;
+}
+
+	#header h1 {
+		color: #ffffff;
+		height: inherit;
+		left: 2.5em;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+	}
+
+		#header h1 a {
+			font-size: 1.25em;
+		}
+
+	#header nav {
+		height: inherit;
+		line-height: inherit;
+		position: absolute;
+		right: 2.75em;
+		top: 0;
+		vertical-align: middle;
+	}
+
+		#header nav > ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+
+			#header nav > ul > li {
+				border-radius: 4px;
+				display: inline-block;
+				margin-left: 1.5em;
+				padding-left: 0;
+			}
+
+				#header nav > ul > li a {
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-o-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #cee8d8;
+					display: inline-block;
+					text-decoration: none;
+				}
+
+					#header nav > ul > li a:hover {
+						color: #ffffff;
+					}
+
+				#header nav > ul > li:first-child {
+					margin-left: 0;
+				}
+
+				#header nav > ul > li .button {
+					height: 2.25em;
+					line-height: 2.25em;
+					margin-bottom: 0;
+					padding: 0 1em;
+					position: relative;
+					top: -0.075em;
+					vertical-align: middle;
+				}
